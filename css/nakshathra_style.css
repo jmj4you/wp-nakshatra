@@ -1,0 +1,110 @@
+
+p { padding:0px; margin:0px;}
+
+.main_bg {
+	width:100%;
+	float:left;
+	height:100%;
+	background-image: url(../images/m_bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center top; position:absolute;
+}
+
+
+.header_bk {}
+
+.logo_p { padding-top:60px; padding-left:0px;}
+
+.top_mail {
+	text-align:right;
+	padding-top:40px;
+	font-family: 'Open Sans', sans-serif;}
+
+.ph_top {
+	color: #469b02;
+	font-size: 1.3em;
+}
+
+
+.mail_icon { padding-right:15px; padding-top:10px; margin-top:10px;}
+
+.mail_txt { padding-top:0px;}
+
+.hm_contact {
+	width:210px;
+	float:right;
+	padding-left:60px;
+	text-align:right;
+	margin-top:40px;
+	background-image: url(../images/mail_icon.png);
+	background-repeat: no-repeat;
+	background-position: left 4px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+.menu_top { padding-top:1.8em;}
+
+
+
+
+@media (min-width: 468px) and (max-width: 991px) {
+  .top_menu_bk { margin-top:-80px; 
+    
+  }
+}
+
+.naks-search { width:100%; height:151px; background-image:url(../images/search-bg.jpg); margin-top:5px; padding-top:10px; box-shadow: 0px 2px 25px #A0A0A0;}
+
+.naks-search h1 { color:#e5691b; font-size:20px; font-family: 'Roboto', sans-serif; line-height:20px; font-weight:500; text-transform: uppercase; text-align:center; padding-bottom:5px;}
+
+.naks-search input { height:35px; padding:22px 20px; font-size:18px;}
+
+.hm-welcome { width:100%; background-color:#fff; margin-top:0px; padding-top:40px; box-shadow: 0px 2px 25px #A0A0A0; text-align:center; padding-bottom:50px;}
+
+.hm-welcome h2 { color:#469b02; font-size:20px; font-family: 'Roboto', sans-serif; line-height:20px; font-weight:500; text-transform: uppercase; text-align:center; padding-bottom:5px;}
+
+.hm-welcome p { padding-left:40px; padding-right:40px; padding-top:5px; padding-bottom:25px;}
+
+.hm-properties { width:100%; background-color:#fff; margin-top:0px; padding-top:40px; box-shadow: 0px 2px 25px #A0A0A0; text-align:center; padding-bottom:50px; float:left;}
+
+.hm-properties h2 { color:#e5691b; font-size:20px; font-family: 'Roboto', sans-serif; line-height:20px; font-weight:500; text-transform: uppercase; text-align:left; padding-bottom:5px; padding-left:35px;} 
+
+.hm-property-outer { float:left; margin-left:20px; margin-bottom:20px; margin-right:20px; border-bottom:solid 4px #ebebeb; padding-bottom:10px;}
+
+.hm-property-thump { width:153px; float:left; margin-left:19px; margin-right:19px; margin-top:20px; margin-bottom:20px; }
+
+.hm-property-thump h2 { color:#e5691b; font-size:20px; font-family: 'Roboto', sans-serif; line-height:20px; font-weight:500; text-transform: uppercase; text-align:center; padding-bottom:5px;}
+
+.hm-property-thump .txt { width:153px; float:left; padding-top:10px; text-align:left; line-height:20px; }
+
+.hm-property-thump img { width:153px; height:101px; float:left; border:solid 1px #3b3b3b; }
+
+
+.naksh-footer { padding-top:20px; float:left; width:100%; padding-bottom:50px;}
+
+.naksh-footer .txt-c { float:left; width:400px; color:#868686;}
+
+.naksh-social { width:500px; float:right;}
+
+.naksh-twitter { width:33px; float:right; height:33px; background-image:url(../images/social-net-icons.png); background-position:0px 0px; background-repeat:no-repeat;}
+
+.naksh-twitter:hover { width:33px; float:right; height:33px; background-image:url(../images/social-net-icons.png); background-position:0px -35px; background-repeat:no-repeat;}
+
+.naksh-linkedin { width:33px; float:right; height:33px; background-image:url(../images/social-net-icons.png); background-position:-42px 0px; background-repeat:no-repeat; margin-right:9px;}
+
+.naksh-linkedin:hover { width:33px; float:right; height:33px; background-image:url(../images/social-net-icons.png); background-position:-42px -35px; background-repeat:no-repeat; margin-right:9px;}
+
+.naksh-facebook { width:33px; float:right; height:33px; background-image:url(../images/social-net-icons.png); background-position:-84px 0px; background-repeat:no-repeat; margin-right:9px;}
+
+.naksh-facebook:hover { width:33px; float:right; height:33px; background-image:url(../images/social-net-icons.png); background-position:-84px -35px; background-repeat:no-repeat; margin-right:9px;}
+
+/* draw any selected text yellow on red background */
+::-moz-selection { color: white;  background: #4cac00; }
+::selection      { color: white;  background: #4cac00; } 
+
+.subpage-banner { width:100%; float:left; height:214px; background-color:#fff;}
+
+.naksh-aboutus { padding-left:40px; padding-right:40px; padding-top:5px; padding-bottom:25px; text-align:left;}
+
+.naksh-aboutus h2 { color:#e5691b; font-size:20px; font-family: 'Roboto', sans-serif; line-height:20px; font-weight:500; text-transform: uppercase; text-align:left; padding-bottom:5px; padding-left:0px;} 
