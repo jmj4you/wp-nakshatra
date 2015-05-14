@@ -27,7 +27,7 @@ Template Name: Property-list
 
             <div class="naksh-aboutus">
 
-                <?php hotProperties(); ?>
+                <?php hotProperties(false); ?>
 
             </div>
 

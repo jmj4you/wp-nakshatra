@@ -11,12 +11,14 @@ add_theme_support('post-thumbnails');
 add_theme_support('html5', array('search-form'));
 
 //  Register custom navigation menu
-function register_nakshathra_menu() {
-    register_nav_menu('nakshathra-header-menu',__( 'Nakshathra Header Menu' ));
+function register_nakshathra_menu()
+{
+    register_nav_menu('nakshathra-header-menu', __('Nakshathra Header Menu'));
 }
-add_action( 'init', 'register_nakshathra_menu' );
 
-function hotProperties()
+add_action('init', 'register_nakshathra_menu');
+
+function hotProperties($more = true)
 {
     $args = array('numberposts' => 10,  /* get 4 posts, or set -1 for all */
         'orderby' => 'date',
@@ -37,20 +39,25 @@ function hotProperties()
         foreach ($myposts as $mypost) {
             /* do things here */
             ?>
+            <a href="<?= $mypost->guid ?>">
+                <div class="hm-property-thump"><img src="<?= joImageUrl($mypost->ID) ?>" width="153"
+                                                    height="101" alt=""/>
 
-            <div class="hm-property-thump"><img src="<?= joImageUrl($mypost->ID) ?>" width="153"
-                                                height="101" alt=""/>
-
-                <div
-                    class="txt"><?= joGet_excerpt($mypost->post_title . ' ' . $mypost->post_content, $mypost->guid) ?></div>
-            </div>
+                    <div
+                        class="txt"><?= joGet_excerpt($mypost->post_title . ' ' . $mypost->post_content, $mypost->url) ?></div>
+                </div>
+            </a>
         <?php
         }
         ?>
     </div>
-    <button type="button" class="btn btn-success">VIEW MORE PROPERTIES</button>
+    <?php
+    if ($more) {
 
-<?php
+        ?>
+        <button type="button" class="btn btn-success">VIEW MORE PROPERTIES</button>
+    <?php
+    }
 //    echo '<h1>JMJ</h1>';
 }
 
@@ -63,7 +70,7 @@ function joGet_excerpt($content, $permalink, $count = 100)
     $excerpt = strip_tags($content);
     $excerpt = substr($excerpt, 0, $count);
     $excerpt = substr($excerpt, 0, strripos($excerpt, " "));
-    $excerpt = $excerpt . '... <a href="' . $permalink . '">more</a>';
+    $excerpt = $excerpt . '...';// <a href="' . $permalink . '">more</a>';
     return $excerpt;
 }
 
@@ -93,7 +100,8 @@ function jo_search_form($form)
 add_filter('get_search_form', 'jo_search_form');
 
 
-function joCustomMenuItems(){
+function joCustomMenuItems()
+{
     // Get the nav menu based on $menu_name (same as 'theme_location' or 'menu' arg to wp_nav_menu)
     // This code based on wp_nav_menu's code to get Menu ID from menu slug
     /*

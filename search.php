@@ -10,7 +10,13 @@
 
 
         <div class="hm-properties">
+            <div class="naks-search">
+                <h1>Find your Property</h1>
 
+                <?php get_search_form(); ?>
+
+
+            </div>
 
             <div class="naksh-aboutus">
 
